@@ -1,0 +1,12 @@
+components:
+  schemas:
+    SocialPostRequest:
+      type: object
+      properties:
+        platform:
+          type: string
+        content:
+          type: string
+        image_url:
+          type: string
+      required: [platform, content, image_url] 

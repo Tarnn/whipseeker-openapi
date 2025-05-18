@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@redocly/openapi-cli": "^0.12.16",
+    "eslint": "^9.27.0",
+    "eslint-plugin-yml": "^1.18.0",
+    "prettier": "^3.5.3",
+    "redoc-cli": "^0.13.21"
+  }
+}

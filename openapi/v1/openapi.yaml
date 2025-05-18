@@ -1,0 +1,16 @@
+version: 3.1.0
+info:
+  title: WhipSeeker API
+  version: 1.0.0
+paths:
+  /schedule/social-post:
+    post:
+      summary: Schedule a social post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '../shared/components.yaml#/components/schemas/SocialPostRequest'
+      responses:
+        '200':
+          description: Post scheduled 

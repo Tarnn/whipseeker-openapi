@@ -1,0 +1,13 @@
+name: OpenAPI CI
+on:
+  push:
+    paths: ['openapi/**.yaml']
+  pull_request:
+    paths: ['openapi/**.yaml']
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: yarn install
+      - run: ./scripts/validate.sh 
